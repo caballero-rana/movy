@@ -7,7 +7,23 @@
   <version>.0.0.1</version>
   <name>movy.rest Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  	<properties>
+		<java-version>1.7</java-version>
+		<springframework.version>4.3.1.RELEASE</springframework.version>
+		<jackson.version>2.7.5</jackson.version>
+ 	</properties>
+	
   <dependencies>
+    <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -15,6 +31,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
     <finalName>movy.rest</finalName>
   </build>
